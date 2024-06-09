@@ -4,13 +4,13 @@
     <div class="float-buttons">
 
      <div class="d-flex justify-content-center">
-     <a href="https://api.whatsapp.com/send?phone=+201555361715" target="_blank">
+     <a href="https://api.whatsapp.com/send?phone=+201028212431" target="_blank">
             <img src="{{ asset('frontend/assets/images/whatsapp_logo.webp') }}"  alt="WhatsApp" class="whatsapp-icon">
         </a>
         </div>
 
         <div class="d-flex justify-content-center">
-            <a href="tel:+201555361715" target="_blank">
+            <a href="tel:+201028212431" target="_blank">
                 <img src="{{ asset('frontend/assets/images/phone_icon.png') }}"  alt="WhatsApp" class="phone-icon">
             </a>
         </div>
@@ -25,9 +25,9 @@
                          <!-- Single Widget -->
                          <div class="single-footer f-contact">
                              <h3>ابق على تواصل معنا</h3>
-                             <p class="phone">Phone: 01555361715</p>
+                             <p class="phone">Phone: 01028212431</p>
                              <p class="mail">
-                                 <a href="mailto:support@aliafandy.com">support@aliafandy.com</a>
+                                 <a href="mailto:support@aliafandy.com">info@scalechem-eg.com</a>
                              </p>
                          </div>
                          <!-- End Single Widget -->
@@ -39,7 +39,7 @@
                              <ul class="app-btn">
                                  <li>
                                      <a
-                                         href="https://play.google.com/store/apps/details?id=com.aliafandy&pcampaignid=web_share">
+                                         href="#">
                                          <i class="lni lni-play-store"></i>
                                          <span class="small-title">Download on the</span>
                                          <span class="big-title">Google Play</span>
@@ -98,7 +98,7 @@
                      </div>
                      <div class="col-lg-4 col-12">
                          <div class="copyright">
-                             <p>Designed and Developed by<a href="https://aliafandy.com/" rel="nofollow">Aliafandy</a>
+                             <p>  All Rights Reserved © Copyright 2024</a>
                              </p>
                          </div>
                      </div>

@@ -13,28 +13,27 @@
                     <div class="slider-head">
                         <!-- Start Hero Slider -->
                         <div class="hero-slider">
-                            <!-- Start Single Slider -->
-                            @foreach ($main_categories as $main_category)
+                            <!-- Start Single Slider --> 
                                 <div class="single-slider">
-                                    <h5 class="category-name">{{ $main_category->name }}</h5>
+                                    <h5 class="category-name">التصنيفات</h5>
                                     <div class="content">
 
 
-                                        @foreach ($sup_categories as $sup_category)
-                                            @if ($sup_category->parent_id == $main_category->id)
-                                                <a href="{{ Route('shop_grid.index', $sup_category->id) }}">
-                                                    <div class="caty"><img src="{{ $sup_category->image_url }}"
+                                        @foreach ($main_categories as $main_category)
+                                          
+                                                <a href="{{ Route('shop_grid.index', $main_category->id) }}">
+                                                    <div class="caty"><img src="{{ $main_category->image_url }}"
                                                             style="border-radius=50%">
-                                                        <h6>{{ $sup_category->name }}</h6>
+                                                        <h6>{{ $main_category->name }}</h6>
                                                     </div>
                                                 </a>
-                                            @endif
+                                            
                                         @endforeach
 
                                     </div>
 
                                 </div>
-                            @endforeach
+                         
                             <!-- End Single Slider -->
 
 

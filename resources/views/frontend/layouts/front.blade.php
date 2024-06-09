@@ -5,10 +5,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>{{ $title }}</title>
-    <meta name="description" content="{{ $title }},aliafandy,ali afandy,على افندى,علي افندي" />
-    <meta name="keyword" content="{{ $title }},aliafandy,ali afandy,على افندى,علي افندي" />
+    <meta name="description" content="{{ $title }}" />
+    <meta name="keyword" content="{{ $title }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/favicon.png') }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset('frontend/assets/images/logo.ico') }}" />
 
     <!-- ========================= CSS here ========================= -->
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/bootstrap.min.css') }} " />
@@ -240,7 +240,7 @@
 
                                     </li>
 
-                                    <li> <i class="mdi mdi-phone-in-talk"></i> 01555361715 </li>
+                                    <li> <i class="mdi mdi-phone-in-talk"></i> 01028212431 </li>
 
                                 </ul>
                             </div>
@@ -263,7 +263,7 @@
                             <li>
                                 <a href="javascript:void(0)"><i class="lni lni-phone"></i></a>
                             </li>
-                            <li> <i class="mdi mdi-phone-in-talk"></i> 01555361715 </li>
+                            <li> <i class="mdi mdi-phone-in-talk"></i> 01028212431 </li>
 
 
 
