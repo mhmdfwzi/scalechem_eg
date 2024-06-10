@@ -45,7 +45,7 @@ class StoresController extends Controller
     {
         //
         $destinations = Destination::all();
-        $categories = Category::where('parent_id', '!=', 'null')->orderby('parent_id', 'asc')->get();
+        $categories = Category::all();
         return view('backend.Admin_Dashboard.stores.create', compact('categories', 'destinations'));
     }
 
@@ -100,7 +100,7 @@ class StoresController extends Controller
         // store the request
         $store = Store::create($data);
 
-        // dd($store);
+        //dd($store);
 
         $store->categories()->sync($request->categories_id);
 
@@ -131,7 +131,7 @@ class StoresController extends Controller
         //
         $store = Store::findOrFail($id);
         $destinations = Destination::all();
-        $categories = Category::where('parent_id', '!=', 'null')->orderby('parent_id', 'asc')->get();
+        $categories = Category::all();
         return view('backend.Admin_Dashboard.stores.edit', 
         compact('store', 'categories','destinations'));
     }
@@ -175,7 +175,7 @@ class StoresController extends Controller
             $data['cover_image'] = $new_cover_image;
         }
 
-
+//dd($data);
         // store the request
         $store->update($data);
 

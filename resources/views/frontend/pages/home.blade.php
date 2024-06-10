@@ -15,7 +15,7 @@
                         <div class="hero-slider">
                             <!-- Start Single Slider --> 
                                 <div class="single-slider">
-                                    <h5 class="category-name">التصنيفات</h5>
+                                    <h5 class="category-name"></h5>
                                     <div class="content">
 
 

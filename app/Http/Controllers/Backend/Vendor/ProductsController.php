@@ -55,8 +55,8 @@ class ProductsController extends Controller
 
         $vendor = Vendor::where('id', Auth::user('vendor')->id)->first();
         $store = Store::where('id', $vendor->store_id)->first();
-        //$categories = Category::all();
-        $categories = $store->categories;
+        $categories = Category::all();
+        //$categories = $store->categories;
        
         $brands = Brand::all();
         $attributes = Attribute::all();

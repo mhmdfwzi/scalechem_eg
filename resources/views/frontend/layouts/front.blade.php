@@ -182,33 +182,41 @@
                                 </div>
                             </li>
 							<li><a href="{{ Route('offers.index') }}">العروض</a></li>
-          					<li class="nav-item"><a href="{{ Route('shop_grid.index') }}">
-							  معرض المنتجات</a></li>
+          					<li class="nav-item"><a href="{{ Route('shop_grid.index') }}"> معرض المنتجات</a></li>
 
-
-
-                            @foreach ($main_categories as $main_category)
-
-                            
-                            <li class="menu-item-has-children contacts">   
-                                <a href="#">{{ $main_category->name }}  <i class="ion ion-ios-arrow-down"></i></a>
+                              <li class="menu-item-has-children">
+                                <a href="#">التصنيفات <i class="ion ion-ios-arrow-down"></i></a>
                                 <div class="menu-subs menu-column-1">
                                     <ul>
-                                        @php
-                                        $sub_categories = App\Models\Category::where('parent_id', $main_category->id)->get();
-                                        @endphp
-                                                                        @foreach ($sub_categories as $sub_category)
-                                                                                <li><a href="{{ Route('shop_grid.index', $sub_category->id) }}">{{ $sub_category->name }}</a></li>
-                                                                             
-                                                                        @endforeach
-                                    </ul>
-                                </div>
-                            </li>
+
+                            @foreach ($main_categories as $main_category)
+ <li class="nav-item"> <a href="{{ Route('shop_grid.index', $main_category->id) }}">{{ $main_category->name }}  </a> </li>
                         @endforeach
+    </ul>
+    </div>
+    </li>
+                        
+                        <!-- @foreach ($main_categories as $main_category)
+
                             
+<li class="menu-item-has-children contacts">   
+    <a href="#">{{ $main_category->name }}  <i class="ion ion-ios-arrow-down"></i></a>
+    <div class="menu-subs menu-column-1">
+        <ul>
+            @php
+            $sub_categories = App\Models\Category::where('parent_id', $main_category->id)->get();
+            @endphp
+                                            @foreach ($sub_categories as $sub_category)
+                                                    <li><a href="{{ Route('shop_grid.index', $sub_category->id) }}">{{ $sub_category->name }}</a></li>
+                                                 
+                                            @endforeach
+        </ul>
+    </div>
+</li>
+@endforeach -->
 
 
-                        <li class="menu-item-has-children category_menu ">
+                        <!-- <li class="menu-item-has-children category_menu ">
                             <a href="#">التصنيفات <i class="ion ion-ios-arrow-down"></i></a>
                             <div class="menu-subs menu-mega menu-column-4" style="direction: rtl">
                                 @foreach ($main_categories as $main_category)
@@ -226,7 +234,7 @@
                                     </div>
                                 @endforeach
                             </div>
-                        </li>
+                        </li> -->
 
                         <li class="menu-item-has-children contacts  category_menu">
                             <a href="#">تواصل معنا <i class="ion ion-ios-arrow-down"></i></a>

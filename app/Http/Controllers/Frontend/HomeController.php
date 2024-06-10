@@ -21,28 +21,30 @@ class HomeController extends Controller
 
 
         // get latest 8 products which status is active 
-     /*    $products = Product::with('category','store','reviews')
+       $products = Product::with('category','store','reviews')
         ->active()
         ->inRandomOrder()
         ->latest()
         ->take(12)
         ->get();
-		*/
+		
 		
 		// Get one product from each store
-        $stores = Store::where('status','=','active')->inRandomOrder()->get();
-        $products = [];
+        // $stores = Store::where('status','=','active')->inRandomOrder()->get();
+        // $products = [];
 
-        foreach ($stores as $store) {
-            $product = Product::with('category', 'store', 'reviews')
-                ->active()
-                ->where('store_id', $store->id)
-                ->inRandomOrder()
-                ->first(); // Get the latest product for each store
-            if ($product) {
-                $products[] = $product;
-            }
-        }
+        // foreach ($stores as $store) {
+        //     $product = Product::with('category', 'store', 'reviews')
+        //         ->active()
+        //         ->where('store_id', $store->id)
+        //         ->inRandomOrder()
+        //         ->first(); // Get the latest product for each store
+        //     if ($product) {
+        //         $products[] = $product;
+        //     }
+        // }
+
+
 		// $best_seller_products = Product::where('product_type','=','best_seller')->active()->latest()->take(4)->get();
         return view('frontend.pages.home',  compact(
             'products',  

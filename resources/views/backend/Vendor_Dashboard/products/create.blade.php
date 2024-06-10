@@ -83,7 +83,7 @@
                                 <select name="category_id" id="" class="custom-select mr-sm-2" required>
                                     <option value=''>{{ trans('products_trans.Choose') }}</option> 
                                     @foreach ($categories as $category) 
-                                        <option value="{{ $category->id }}">{{ $category->name }} -->({{$category->parent->name}})</option>
+                                        <option value="{{ $category->id }}">{{ $category->name }} </option>
                                      @endforeach 
                                 </select>
                                 @error('category_id')

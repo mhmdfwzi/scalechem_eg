@@ -279,10 +279,10 @@
                                         style="text-align: center;
                                     margin-top: 20px; ">
                                         <div class="col-md-12"
-                                            style=" background-color: #30bb47;
+                                            style=" 
                                         padding: 100px; ">
                                             <div class="d-flex  justify-content-center ">
-                                                <p style="color: white; font-size:25px; font-weight:bold"> لا توجد
+                                                <p style="color: #CC0C4C; font-size:25px; font-weight:bold"> لا توجد
                                                     منتجات</p>
                                             </div>
                                         </div>

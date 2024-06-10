@@ -175,33 +175,7 @@
                 <div class="nav-inner">
 
                     <!-- Start Mega Category Menu -->
-                    <div class="mega-category-menu">
-                        <span class="cat-button">
-                            <i class="lni lni-menu"></i> التصنيفات
-                        </span>
-                        <ul class="sub-category">
-                            @foreach ($categories as $category)
-                                {{-- Check if the category has parent --}}
-                                @if ($category->parent_id === null)
-                                    {{-- Parent Category --}}
-                                    <li>
-                                        <a
-                                            href="{{ route('shop_grid.index', $category->id) }}">{{ $category->name }}</a>
-                                        <ul class="inner-sub-category">
-                                            {{-- Find child categories --}}
-                                            @foreach ($categories as $childCategory)
-                                                @if ($childCategory->parent_id === $category->id)
-                                                    <li><a
-                                                            href="{{ route('shop_grid.index', $childCategory->id) }}">{{ $childCategory->name }}</a>
-                                                    </li>
-                                                @endif
-                                            @endforeach
-                                        </ul>
-                                    </li>
-                                @endif
-                            @endforeach
-                        </ul>
-                    </div>
+                    
                     <!-- End Mega Category Menu -->
 
 

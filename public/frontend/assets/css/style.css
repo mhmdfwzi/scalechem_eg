@@ -139,7 +139,7 @@ video {
     font-size: 1.75rem;
     font-weight: 700;
     line-height: inherit;
-    color:hsl(118, 89%, 28%);
+    color:#ff0050;
     border: none;
     outline: none;
     text-transform: uppercase;
@@ -262,7 +262,7 @@ video {
     opacity: 0;
     visibility: hidden;
     border-radius: .25rem;
-    border-top: 3px solid hsl(118, 89%, 28%);
+    border-top: 3px solid #ff0050;
     background: #fafafa;
     -webkit-box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
@@ -353,7 +353,7 @@ video {
     padding: .75rem 0;
     border: none;
     outline: none;
-    color:hsl(118, 89%, 28%);
+    color:#ff0050;
     text-transform: uppercase;
     text-rendering: optimizeLegibility;
     -webkit-transition: all .3s ease-in-out;
