@@ -133,7 +133,7 @@
                         <div class="menu-mobile-header">
                             <button type="button" class="menu-mobile-arrow"><i
                                     class="ion ion-ios-arrow-back"></i></button>
-                            <div class="menu-mobile-title">aliafandy</div>
+                            <div class="menu-mobile-title">scalechem</div>
                             <button type="button" class="menu-mobile-close"><i class="ion ion-ios-close"></i></button>
                         </div>
                         <ul class="menu-section" style="direction: rtl">
@@ -236,30 +236,18 @@
                             </div>
                         </li> -->
 
-                        <li class="menu-item-has-children contacts  category_menu">
-                            <a href="#">تواصل معنا <i class="ion ion-ios-arrow-down"></i></a>
-                            <div class="menu-subs menu-column-1">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.facebook.com/profile.php?id=100092454938621"><i
-                                                class="lni lni-facebook-filled"></i></a>
-                                        <a href="#"><i class="lni lni-youtube"></i></a>
-                                        <a href="#"><i class="lni lni-instagram-filled"></i></a>
-
-                                    </li>
-
-                                    <li> <i class="mdi mdi-phone-in-talk"></i> 01028212431 </li>
-
-                                </ul>
-                            </div>
-                        </li>
+                        
 
                         </ul>
                     </nav>
                     <div class="nav-social">
                         <ul>
+                            <li><button type="button" class="btn   " data-bs-toggle="modal"
+                                data-bs-target="#SearchModal">
+                                <i class="lni lni-search-alt"></i>
+                            </button></li>
                             <li>
-                                <a href="https://www.facebook.com/profile.php?id=100092454938621"><i
+                                <a href="https://www.facebook.com/Scale.Pharmaceutical.and.Cosmetics.Material.EGYPT"><i
                                         class="lni lni-facebook-filled"></i></a>
                             </li>
                             <li>
@@ -269,10 +257,10 @@
                                 <a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)"><i class="lni lni-phone"></i></a>
+                                <a href="tel:+201028212431" target="_blank"><i class="lni lni-phone"></i></a>
                             </li>
-                            <li> <i class="mdi mdi-phone-in-talk"></i> 01028212431 </li>
-
+                            
+                            
 
 
                         </ul>
@@ -283,10 +271,7 @@
 
                 <div class="navbar-cart">
                      <div class="wishlist" style="padding-right: 10px">
-                    <button type="button" class="btn   " data-bs-toggle="modal"
-                    data-bs-target="#SearchModal">
-                    <i class="lni lni-search-alt"></i>
-                </button></div>
+                    </div>
 
                     <x-frontend.cart-menu> </x-frontend.cart-menu>
                 </div>

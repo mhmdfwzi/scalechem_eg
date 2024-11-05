@@ -2549,15 +2549,20 @@ element.style {
   -ms-flex-align: center;
   align-items: center;
   direction: ltr;
+  margin-left: 80px;
 }
 
 @media (max-width: 767px) {
   .header .nav-social, .header .category_menu {
     position: relative;
     margin-top: -40px;
-    display: none;
+   
   }
-  
+  .header .navbar-cart {
+   
+    margin-left: 200px;
+    margin-top: -15px;
+  }
   .header .category_menu {
     display: none;
   }
@@ -2580,7 +2585,7 @@ element.style {
 
 .header .nav-social ul li {
   display: inline-block;
-  margin-left: 5px;
+  margin-left: 3px;
 }
 
 .header .nav-social ul li:last-child {
@@ -2618,18 +2623,18 @@ element.style {
 }
 
 .header .navbar-brand img {
-  width: 110px;
+  width: 120px;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .header .navbar-brand img {
-    width: 190px;
+    width: 200px;
   }
 }
 
 @media (max-width: 767px) {
   .header .navbar-brand img {
-    width: 180px;
+    width: 85px;
   }
 }
 
@@ -3040,15 +3045,40 @@ element.style {
   background-repeat: no-repeat;
   height: auto;
   position: relative;
-  direction: rtl;
- 
+  direction: rtl;  ;
 }
+
+.hero-area .hero-slider .single-slider .img {
+  float: left; 
+  align-items: center;
+  width: 47%; 
+  
+ }
+
+  
+.hero-area .hero-slider .single-slider .img img{
+  max-height: 350px;
+  max-width: 450px;
+}
+
 
 
 @media (max-width: 767px) {
   .hero-area .hero-slider .single-slider {
     position: relative;
   }
+  .hero-area .hero-slider .single-slider .img img{
+    max-height: 150px;
+    max-width: 350px;
+  }
+  .hero-area .hero-slider .single-slider .info h1 {
+font-size: 25px;
+    
+   }
+   .hero-area .hero-slider .single-slider .info span {
+    font-size: 15px;    
+        
+       }
 
   .hero-area .hero-slider .single-slider::before {
     position: absolute;
@@ -3085,8 +3115,10 @@ element.style {
 .hero-area .hero-slider .single-slider .content {
   padding: 2px 2px 2px 2px;
   position: relative;
-  
-  right: 0; 
+  display: contents;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox; 
   text-align: center; 
 
 }
@@ -3094,6 +3126,7 @@ element.style {
   padding: 1px;
   text-align: center;
   font-size: 20px;
+  padding-right:15px
 
 }
 .hero-area .hero-slider .single-slider .category-name{
@@ -3106,10 +3139,8 @@ element.style {
 .hero-area .hero-slider .single-slider .content .caty {
   width: 120px;
   height: 120px;
-  text-align: center;
-  padding: -3px;
-  margin-right: 25px;
-  display: inline-table;
+ text-align: center;
+ padding: 0px;
 
 
 }
@@ -3120,7 +3151,7 @@ element.style {
 
 }
 .hero-area .hero-slider .single-slider .content .caty h6{
-  font-size: 14px;
+  font-size: 11px;
   margin-top: 5px;
   color: #081828;
 }
@@ -3144,6 +3175,8 @@ element.style {
   .hero-area .hero-slider .single-slider .content .caty img{
     width: 3rem;
     height: 3rem;  
+  
+   
   }
   .hero-area .hero-slider .single-slider .content .caty {
     width: 4.2rem;
@@ -3154,6 +3187,17 @@ element.style {
   
   
   }
+
+  .hero-area .hero-slider .single-slider .img{
+  position: absolute;
+    z-index: 1;
+    width: 380px;
+  }
+  .hero-area .hero-slider .single-slider .content .info{
+    margin-top: 200px;
+    width: 380px;
+  }
+ 
 }
 
 .hero-area .hero-slider .single-slider .content h2 {
@@ -3764,7 +3808,7 @@ text-align: right;
     display: inline-block;
     text-align: right;
   }
-  
+ 
   .single-product .product-info .price .discount-price {
     margin: 0;
     color: #aaaaaa;
@@ -3775,8 +3819,70 @@ text-align: right;
     display: inline-block;
     text-align: right;
   }
+  .info .price .discount-price {
+    margin: 0;
+    color: #aaaaaa;
+    text-decoration: line-through;
+    font-weight: normal;
+    margin-right: 10px;
+    font-size: .8rem;
+    display: inline-block;
+    text-align: right;
+  }
+
+  .info .price span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #05cc5f;
+    display: inline-block;
+    text-align: right;
+  }
+
+  
+  .hero-area .hero-slider .single-slider .info {
+    float: right; 
+    align-items: center;
+    width: 47%; 
+    margin-top: 40px;
+    min-height: 150px;
+    background-image: linear-gradient(180deg, rgb(255, 255, 255), rgb(255, 255, 255));
+    padding-top: 10px;
+
+   }
+
+   .hero-area .hero-slider .single-slider .info .button {
+    margin-top: 10px;
+  }
+  
+  
 
 }
+.info{
+  width: 60%;
+  padding-top: 70px;
+  min-height: 350px;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 255), rgb(228, 97, 136));
+}
+.info .price .discount-price {
+  margin: 0;
+  color: #a50303;
+  text-decoration: line-through;
+  font-weight: normal;
+  margin-right: 10px;
+  font-size: .8rem;
+  display: inline-block;
+  text-align: right;
+  font-weight: 900;
+}
+
+.info .price span {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #009844;
+  display: inline-block;
+  text-align: right;
+}
+
 
 /*======================================
     Banner CSS
@@ -8054,7 +8160,7 @@ direction: rtl;
 	Footer CSS
 ========================================*/
 .footer {
-  background-color: #ff0050;
+  background-color: #081828;
   position: relative;
   /* Single Footer */
   /* End Single Footer */
