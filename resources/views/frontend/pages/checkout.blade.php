@@ -247,7 +247,7 @@
                                 </li> --}}
 
                                 <div class="single-form form-default button">
-                                    <button type="submit" class="btn">انهاء الطلب</button>
+                                    <button type="submit" class="btn">اتمام الشراء  </button>
                                 </div>
                             </ul>
                         </div>
