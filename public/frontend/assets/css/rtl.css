@@ -2549,7 +2549,7 @@ element.style {
   -ms-flex-align: center;
   align-items: center;
   direction: ltr;
-  margin-left: 80px;
+  margin-left: 100px;
 }
 
 @media (max-width: 767px) {
@@ -2560,8 +2560,8 @@ element.style {
   }
   .header .navbar-cart {
    
-    margin-left: 200px;
-    margin-top: -15px;
+    margin-left: 180px;
+    margin-top: -5px;
   }
   .header .category_menu {
     display: none;
@@ -2634,7 +2634,7 @@ element.style {
 
 @media (max-width: 767px) {
   .header .navbar-brand img {
-    width: 85px;
+    width: 100px;
   }
 }
 

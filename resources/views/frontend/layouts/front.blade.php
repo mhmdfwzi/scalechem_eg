@@ -253,9 +253,7 @@
                             <li>
                                 <a href="javascript:void(0)"><i class="lni lni-youtube"></i></a>
                             </li>
-                            <li>
-                                <a href="javascript:void(0)"><i class="lni lni-instagram-filled"></i></a>
-                            </li>
+                           
                             <li>
                                 <a href="tel:+201028212431" target="_blank"><i class="lni lni-phone"></i></a>
                             </li>
