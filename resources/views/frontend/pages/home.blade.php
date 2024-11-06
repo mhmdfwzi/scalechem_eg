@@ -63,18 +63,18 @@
     </section>
     <!-- End Slider Area -->
 
-    <!-- Start Trending Product Area -->
+    <!-- Start Most viewed Area -->
     <section class="trending-product section">
               <div class="container">
                         <div class="row">
                                   <div class="col-12">
                                             <div class="section-title">
-                                                      <h2>Trending Product</h2>
+                                                      <h2>Most viewed  Products</h2>
                                             </div>
                                   </div>
                         </div>
                         <div class="row">
-                                  @foreach ($products as $product)
+                                  @foreach ($products_mostViewed as $product)
                                   <div class="col-lg-3 col-md-6 col-12">
                                             <x-frontend.product-card :product="$product" />
                                   </div>
@@ -84,8 +84,51 @@
     </section>
     <!-- End Trending Product Area -->
 
-   
-    <!-- End Brands Area -->
+       <!-- Start Trending Product Area -->
+       <section class="trending-product section">
+        <div class="container">
+                  <div class="row">
+                            <div class="col-12">
+                                      <div class="section-title">
+                                                <h2>Trending Product</h2>
+                                      </div>
+                            </div>
+                  </div>
+                  <div class="row">
+                            @foreach ($products as $product)
+                            <div class="col-lg-3 col-md-6 col-12">
+                                      <x-frontend.product-card :product="$product" />
+                            </div>
+                            @endforeach
+                  </div>
+        </div>
+</section>
+<!-- End Trending Product Area -->
+    <!-- Start Brands Area -->
+    <div class="brands" style="direction: ltr">
+        <div class="container">
+                  <div class="row">
+                            <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
+                                      <h2 class="title">Categories    </h2>
+                            </div>
+                  </div>
+
+                  <div class="brands-logo-wrapper">
+                            <div
+                                      class="brands-logo-carousel d-flex align-items-center justify-content-between">
+                                      @foreach ($main_categories as $main_category)
+                                      <div class="brand-logo">
+                                          <a href="{{ Route('shop_grid.index', $main_category->id) }}">
+                                                          <img src="{{ $main_category->image_url }}" alt="#">
+                                                          <p>{{ $main_category->name }}</p>
+                                                </a>
+                                      </div>
+                                      @endforeach
+                            </div>
+                  </div>
+        </div>
+</div>
+<!-- End Brands Area -->
 
     <!-- Start Shipping Info -->
     <section class="shipping-info">
