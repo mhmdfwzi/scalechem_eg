@@ -255,24 +255,23 @@
                             </li>
                            
                             <li>
-                                <a href="tel:+201028212431" target="_blank"><i class="lni lni-phone"></i></a>
+                                <a href="tel:+201005242818" target="_blank"><i class="lni lni-phone"></i></a>
                             </li>
-                            
+                             
                             
 
 
                         </ul>
                     </div>
+                    <div class="navbar-cart">
+                        <div class="wishlist"  > </div>
+                        <x-frontend.cart-menu> </x-frontend.cart-menu>
+                    </div>
                 </div>
 
                 
 
-                <div class="navbar-cart">
-                     <div class="wishlist" style="padding-right: 10px">
-                    </div>
-
-                    <x-frontend.cart-menu> </x-frontend.cart-menu>
-                </div>
+                 
                 <div class="header-item-right">
                     <button type="button" class="menu-mobile-trigger">
                         <span></span>

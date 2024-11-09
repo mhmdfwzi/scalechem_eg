@@ -109,7 +109,10 @@
         <div class="container">
                   <div class="row">
                             <div class="col-lg-6 offset-lg-3 col-md-12 col-12">
-                                      <h2 class="title">Categories    </h2>
+                                <div class="section-title">
+                                    <h2>Categories</h2>
+                          </div>
+                                   
                             </div>
                   </div>
 
