@@ -177,11 +177,14 @@
                     <div class="row">
                         <div class="col-md-12">
 							<div class="form-group"><label>وصف طويل للمنتج</label>
-                                <textarea id="summernote" name="description" 
-                                class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
-                                focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 
-                                dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:border-blue-500"
-                                  name="content" required>
+                                 
+
+
+                                  <textarea id="summernote"
+                                  class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
+                                  focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600
+                                   dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    name="description" required>
                                     {{-- {{ old('content') }} --}}
                                 </textarea>
 
@@ -315,22 +318,11 @@
 
 <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
-<script>
-    $('#summernote').summernote({
-        placeholder: 'Hello ..!',
-        tabsize: 2,
-        height: 120,
-        toolbar: [
-            ['style', ['style']],
-            ['font', ['bold', 'underline', 'clear']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['table', ['table']],
-            ['insert', ['link', 'video']],
-            ['view', ['codeview', 'help']]
-        ]
+  <script>
+    $(document).ready(function() {
+        $('#summernote').summernote();
     });
-</script>
+  </script>
 <script>
     function preview() {
         frame.src = URL.createObjectURL(event.target.files[0]);

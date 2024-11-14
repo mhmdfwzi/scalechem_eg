@@ -11,6 +11,7 @@ use App\Http\Controllers\Frontend\ProfileController;
 use App\Http\Controllers\Frontend\ReviewsController;
 use App\Http\Controllers\Frontend\SendOTPController;
 use App\Http\Controllers\Frontend\ShopGridController;
+use App\Http\Controllers\Frontend\BlogsNewsController;
 use App\Models\job;
 use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
@@ -73,16 +74,19 @@ Route::group([
 
     Route::get('auth/user/2fa', [TwoFactorAuthenticationController::class, 'index'])->name('front.2fa');
 
-    Route::get('/send-otp', function () {
-        return view('frontend.pages.send_otp');
-    });
+    Route::get('/send-otp', function () { return view('frontend.pages.send_otp'); });
     Route::post('/send-otp', [SendOTPController::class,'sendOTP'])->name('send-otp');
+
+   
 
     Route::get('/offers/{categoryId?}', [OffersController::class, 'index'])->name('offers.index');
     Route::get('/offers_filters', [OffersController::class, 'offers_filters'])->name('offers_filters');
     Route::get('/offers_store/{storeId?}', [OffersController::class, 'store'])->name('offers.store');
 
 
-
+    Route::get('/blogsNews', [BlogsNewsController::class,'blogsNews'])->name('blogsNews');
+    Route::get('/blogNewsDetails/{id}', [BlogsNewsController::class,'blogsNewsDetails'])->name('blogNewsDetails');
+    
+    
 
 });

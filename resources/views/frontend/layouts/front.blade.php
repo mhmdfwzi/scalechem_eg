@@ -70,15 +70,17 @@
 
 
     @stack('styles')
+ 
     <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FYZ6QV4TMV"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-FYZ6QV4TMV');
-</script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WLRY2PFLX4"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-WLRY2PFLX4');
+    </script>
+    
 
 </head>
 
@@ -182,7 +184,8 @@
                                 </div>
                             </li>
 							<li><a href="{{ Route('offers.index') }}">العروض</a></li>
-          					<li class="nav-item"><a href="{{ Route('shop_grid.index') }}"> معرض المنتجات</a></li>
+                            <li class="nav-item"><a href="{{ Route('shop_grid.index') }}"> معرض المنتجات</a></li>
+                            <li class="nav-item"><a href="{{ Route('blogsNews') }}"> المدونه  </a></li>
 
                               <li class="menu-item-has-children">
                                 <a href="#">التصنيفات <i class="ion ion-ios-arrow-down"></i></a>
@@ -242,9 +245,9 @@
                     </nav>
                     <div class="nav-social">
                         <ul>
-                            <li><button type="button" class="btn   " data-bs-toggle="modal"
+                            <li><button type="button" class="btn" data-bs-toggle="modal"
                                 data-bs-target="#SearchModal">
-                                <i class="lni lni-search-alt"></i>
+                                <i class="lni lni-search-alt" style="font-size: 27px"></i>
                             </button></li>
                             <li>
                                 <a href="https://www.facebook.com/Scale.Pharmaceutical.and.Cosmetics.Material.EGYPT"><i

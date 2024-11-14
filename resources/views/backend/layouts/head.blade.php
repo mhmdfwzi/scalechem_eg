@@ -10,10 +10,6 @@
 
 <link href="{{ URL::asset('backend/assets/datatables/jquery.dataTables.min.css') }}" rel="stylesheet">
 
-
-<link href="{{ URL::asset('backend/assets/css/summernote-lite.min.css') }}" rel="stylesheet">
-
-
 {{-- <link href="{{asset('backend/assets/css/fontawesone_all.min.css')}}" rel="stylesheet"> --}}
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 

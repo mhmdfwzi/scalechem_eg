@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\CustomVerificationController;
+use App\Http\Controllers\Backend\Admin\BlogsNewsController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Fortify\Fortify;
@@ -43,3 +44,5 @@ Route::get('/resendOTP', [CustomVerificationController::class, 'resendOTP']) ->n
 require __DIR__.'/backend.php';
 // require __DIR__.'/fortify.php';
 require __DIR__.'/frontend.php';
+
+ 

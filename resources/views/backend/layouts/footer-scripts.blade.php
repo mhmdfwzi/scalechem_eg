@@ -9,31 +9,13 @@
 {{-- <script src="{{ asset('backend/assets/js/toastr.js') }}"></script> --}}
 {{-- <script src="{{ asset('backend/assets/js/validation.js') }}" defer></script> --}}
 <script src="{{ asset('backend/assets/js/custom.js') }}"></script>
-<script src="{{ asset('backend/assets/js/summernote-lite.min.js') }}" defer></script>
-
+ 
 <script>
     const userID = "{{ auth('admin')->id() }}";
     console.log(userID);
 </script>
 
-<script>
-    // Initialize the summernote editor
-    $('#summernote').summernote({
-        placeholder: 'Hello ..!',
-        tabsize: 2,
-        height: 120,
-        toolbar: [
-            ['style', ['style']],
-            ['font', ['bold', 'underline', 'clear']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['table', ['table']],
-            ['insert', ['link', 'video']],
-            ['view', ['codeview', 'help']]
-        ]
-    });
-</script>
-
+ 
 {{-- @include('sweetalert::alert') --}}
 
 <script>
