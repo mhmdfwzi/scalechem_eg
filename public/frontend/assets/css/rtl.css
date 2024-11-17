@@ -2551,13 +2551,14 @@ element.style {
   -ms-flex-align: center;
   align-items: center;
   direction: ltr;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 
 @media (max-width: 767px) {
   .header .nav-social, .header .category_menu {
     position: relative;
     margin-top: -35px;
+    margin-left: 100px;
    
   }
   .header .navbar-cart {
