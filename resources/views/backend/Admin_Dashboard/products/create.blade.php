@@ -170,11 +170,20 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <textarea id="summernote" name="description"
-                                    class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    id="message" name="content" required="">
-                                    {{-- {{ old('content') }} --}}
-                                </textarea>
+                                
+
+                                <textarea id="summernote"
+                                class="w-full bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                name="description">
+                     
+                
+                        {{ old('content') }}
+                    </textarea>
+                    <script>
+                      $(document).ready(function() {
+                          $('#summernote').summernote();
+                      });
+                    </script>
                             </div>
                         </div>
                     </div>
@@ -300,23 +309,7 @@
 {{-- Tagify --}}
 <script src="{{ asset('backend/assets/tagify/tagify.js') }}"></script>
 <script src="{{ asset('backend/assets/tagify/tagify.polyfills.min.js') }}"></script>
-
-<script>
-    $('#summernote').summernote({
-        placeholder: 'Hello ..!',
-        tabsize: 2,
-        height: 120,
-        toolbar: [
-            ['style', ['style']],
-            ['font', ['bold', 'underline', 'clear']],
-            ['color', ['color']],
-            ['para', ['ul', 'ol', 'paragraph']],
-            ['table', ['table']],
-            ['insert', ['link', 'video']],
-            ['view', ['codeview', 'help']]
-        ]
-    });
-</script>
+ 
 <script>
     function preview() {
         frame.src = URL.createObjectURL(event.target.files[0]);
