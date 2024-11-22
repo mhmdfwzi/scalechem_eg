@@ -4,13 +4,13 @@
     <div class="float-buttons">
 
      <div class="d-flex justify-content-center">
-     <a href="https://api.whatsapp.com/send?phone=+201028212431" target="_blank">
+     <a href="https://api.whatsapp.com/send?phone=01028212431" target="_blank">
             <img src="{{ asset('frontend/assets/images/whatsapp_logo.webp') }}"  alt="WhatsApp" class="whatsapp-icon">
         </a>
         </div>
 
         <div class="d-flex justify-content-center">
-            <a href="tel:+201028212431" target="_blank">
+            <a href="tel:01028212431" target="_blank">
                 <img src="{{ asset('frontend/assets/images/phone_icon.png') }}"  alt="WhatsApp" class="phone-icon">
             </a>
         </div>
@@ -108,9 +108,8 @@
                                  <span>تابعنا على :</span>
                              </li>
                              <li><a href="https://www.facebook.com/Scale.Pharmaceutical.and.Cosmetics.Material.EGYPT"><i
-                                         class="lni lni-facebook-filled"></i></a></li>
-                             <li><a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a></li>
-                             <li><a href="javascript:void(0)"><i class="lni lni-instagram"></i></a></li>
+                                         class="lni lni-facebook-filled"></i></a></li> 
+                             <li><a href="https://www.instagram.com/scale_pharmaceutical?igsh=ZmpjNHdwYTVnYWNw&utm_source=qr"><i class="lni lni-instagram"></i></a></li>
                              <li><a href="javascript:void(0)"><i class="lni lni-google"></i></a></li>
                          </ul>
                      </div>
